@@ -1,0 +1,370 @@
+*zerando minha pagina  na altura e largura tambem dando um tamanho de fonte para minha letras e estilos pra ela*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*estilizando meu header dando tamanho e cor e pedindo pra que ele fique parado quando rolar a pagina*/
+header{
+    padding: 20px;
+    background-color:#ffffff ;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+/*estilizando meus menus ul fazndo ele ficar flequisivel centralizando e tirando umas bolinha que vem da lista nao ordernada*/
+.menu-header ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+/*dando espaço pra minha lista */
+.menu-header li{
+   margin-right: 50px;
+}
+/*estilizando meu menu na tag (A) dando cor,tamanho e fonte e colocando um curso */
+.menu-header a{
+    text-decoration: none;
+    color: rgb(6, 6, 6);
+    font-size: 20px;
+    cursor:pointer;
+}
+/*aqui estou pedindo pra que quando passa o mouse ele mude de cor*/
+.menu-header a:hover{
+    color: rgb(209, 200, 26);
+    transition: 0.5s;
+}
+/*chamando uma img pelo css dando tamanho ,ajustando com o tamanho da pagina e centralizando ela*/
+.div-section1 {
+    padding: 6em;
+   background-image: url(imagem.jose/textura-2.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+/*estilizando o button detro da minha section */
+.div-section1 button{
+   border-radius: 90px;
+   padding:10px;
+   width: 190px;
+   margin: 30px;
+   margin-left: 0px;
+   font-size: 20px;
+}
+/*deixando o button dentro da minha section flexsivel e tirando um traço que fica abaixo do nome por causa da tag(A)*/
+.div-section1  a{
+    display: flex;
+    text-decoration: none;
+    
+}
+/*estilizando button na saction*/
+.div-section1  a button{
+    margin-right: 70px;
+    justify-content: center;
+    border-color: rgb(0, 255, 26);
+    cursor: pointer;
+}
+/*pedindo que quando passe o mouse ele mude cor o button*/
+.div-section1  a button:hover{
+    background-color: rgb(204, 194, 15);
+    transition: 0,5s;
+    color: rgb(46, 16, 215);
+}
+/*fim da sessao 1 */
+/*estiliznado minha section 2*/
+#section-2{
+    padding: 5em;
+    background-image: url(imagem.jose/textura.jpg);
+    background-position:center;
+    background-size: cover;
+
+   
+}
+/*estilizando o h2 da section2*/
+.div-section2 h2{
+    text-align: center;
+    margin: 15px;
+}
+/*estilizando o p da saction2 */
+.div-section2 p{
+font-size: 25px;
+color: rgb(0, 0, 0);
+
+}
+
+.div-flex{
+    background-color: rgb(0, 195, 130);
+    padding:9em;
+   
+}
+
+h2{
+    text-align: center;
+}
+#flexbox img{
+    max-width: 100%;
+    display: block;
+
+}
+#flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+ 
+}
+
+#flexbox div{
+    margin: 1px;
+    flex: 1 1 200px;
+}
+#flexbox p{
+    font-size: 19px;
+
+}
+.hodape{
+    background-color:#178a51 ;
+    padding: 10vh;
+}
+.hodape ul{
+    display: flex;
+    justify-content: center;
+}
+.hodape li{
+    margin-top: 0.6rem;
+    margin-left: 50px;
+    list-style: none;
+}
+
+.hodape a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    cursor:pointer;
+}
+.hodape a:hover{
+    color: yellow;
+    transition: 0.5s;
+}
+
+.icons{
+    margin-top: 1rem;
+   justify-content: center;
+    display: flex;
+}
+
+
+.simbulo-nk img{
+   margin: 10px;
+   margin-right: 50px;
+
+}
+
+@media screen and (max-width : 1920px ) {
+
+    .hodape{
+        padding: 3vh;
+      }
+    
+      .hodape a{
+        font-size: 1rem;
+      }
+    
+      .icons{
+        font-size: 2rem;
+      }
+    
+        
+}
+
+@media screen and (max-width: 1366px) {
+
+  .hodape{
+    padding: 3vh;
+  }
+
+  .hodape a{
+    font-size: 1rem;
+  }
+
+  .icons{
+    font-size: 1rem;
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 991px){
+
+     /*Aqui começa a primeira seção*/
+    
+     .div-section1 {
+        padding: 4em;
+        background-image: url(imagem.jose/barnes\ da\ camisa\ da\ selação\ BR.jpg);
+        background-size: cover;
+        position: center;
+       }
+
+       .div-section1 h1{
+        font-size: 19px;
+    }
+
+    .paragrafo{
+        margin-top: 4px;
+        font-size: 18px;
+    }
+
+    .div-section1 button{
+        border-radius: 40px;
+        padding: 15px;
+        width: 4rem;
+        margin: 30px;
+        margin-left: 0px;
+        font-size: 16px;
+     }
+     
+     .div-section1  a button{
+         margin-right: 70px;
+         justify-content: center;
+         border-color: rgb(0, 255, 26);
+         cursor: pointer;
+     }
+
+     /*Aqui começa o roda-pé*/
+
+ .hodape a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    cursor:pointer;
+}
+.hodape a:hover{
+    color: yellow;
+    transition: 0.5s;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 720px ) {
+
+    .hodape a{
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 767px ) {
+    .menu-header li{
+        margin-right: 15px;
+     }
+
+    .menu-header a{
+        text-decoration: none;
+        color: rgb(6, 6, 6);
+        font-size: 17px;
+        cursor:pointer;
+    }
+
+     /*Aqui começa a primeira seção*/
+    
+     .div-section1 {
+        padding: 2em;
+        background-image: url(imagem.jose/barnes\ da\ camisa\ da\ selação\ BR.jpg);
+        background-size: cover;
+        position: center;
+       }
+
+       .div-section1 h1{
+        font-size: 16px;
+    }
+
+    .paragrafo{
+        margin-top: 4px;
+        font-size: 15px;
+    }
+
+    .div-section1 button{
+        border-radius: 50px;
+        padding: 6px;
+        width: 4rem;
+        margin: 30px;
+        margin-left: 0px;
+        font-size: 12px;
+     }
+     
+     .div-section1  a button{
+         margin-right: 70px;
+         justify-content: center;
+         border-color: rgb(0, 255, 26);
+         cursor: pointer;
+     }
+
+     /* Aqui começa a segunda seção*/
+
+     #section-2{
+        padding: 4em;
+        background-image: url(imagem.jose/baners-nk31.jpg);
+        background-position: 100%;
+        background-size: cover;
+    }
+
+    .div-section2 h2{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        font-size: 16px;
+        text-align: center;
+        margin: -0.1px;
+    }
+
+    .div-section2 p{
+        margin-top: 10px;
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+ }
+
+ #flexbox {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+ 
+}
+
+#flexbox p{
+    font-size: 19px;
+    text-align: center;
+
+}
+
+ /*Aqui começa o roda-pé*/
+
+ .hodape a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    cursor:pointer;
+}
+.hodape a:hover{
+    color: yellow;
+    transition: 0.5s;
+}
+
+}
